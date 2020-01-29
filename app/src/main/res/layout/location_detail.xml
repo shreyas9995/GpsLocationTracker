@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/area"
+        android:text="area"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:layout_weight="66.6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="33.30">
+
+        <TextView
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:id="@+id/latitude"
+            android:text="latitude"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/longitude"
+            android:text="longitude"/>
+
+    </LinearLayout>
+
+</LinearLayout>
